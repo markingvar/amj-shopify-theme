@@ -6,7 +6,9 @@
         "270a6bd0-3eb2-41fc-83b9-a7571433f6d4": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/quilt.jpg"
+            "image": "shopify:\/\/shop_images\/quilt.jpg",
+            "hero-text-one": "Custom Quilts & Crafts",
+            "hero-text-two": "Classic Comfort. Modern Style."
           }
         }
       },
