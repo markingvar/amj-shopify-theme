@@ -1,0 +1,26 @@
+.homepage-hero-wrapper {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  background-color: #ffffff;
+  opacity: 0.5;
+  background-color: #ffffff;
+  opacity: 0.5;
+  background-size: 12px 12px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #f5f2fa 0,
+    #f5f2fa 1.2000000000000002px,
+    #ffffff 0,
+    #ffffff 50%
+  );
+}
+
+.homepage-hero-image-wrapper {
+}
+
+.hh-logo-wrapper {
+}
+
+.hh-image {
+}
