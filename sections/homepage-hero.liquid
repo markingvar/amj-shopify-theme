@@ -6,12 +6,12 @@
 
 <div class="homepage-hero-wrapper">
   <div class="homepage-hero-striped-background"></div>
+  {% for block in section.blocks %}
   <div class="homepage-hero-image-wrapper">
     <div class="hh-logo-wrapper">
       {%- liquid render 'icon-amj-creations-long' -%}
     </div>
     <div class="hh-image-wrapper">
-      {% for block in section.blocks %}
         
         {% if block.settings.image != blank %}
           <div class="image-wrapper">
@@ -35,13 +35,13 @@
           >
           </div>
           {% endif %}
+        </div>
+        <div class="hh-hero-text">
+          <div class="hero-text-one">{{ block.settings.hero-text-one }}</div>
+          <div class="hero-text-two">{{ block.settings.hero-text-two }}</div>
+        </div>
+      </div>
     {% endfor %}
-    </div>
-    <div class="hh-hero-text">
-      <div class="hero-text-one">I am hero text one</div>
-      <div class="hero-text-two">I am hero text two</div>
-    </div>
-  </div>
 </div>
 
 {% schema %}
