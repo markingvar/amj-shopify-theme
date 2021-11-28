@@ -1,0 +1,27 @@
+{{ 'section-about-hero.css' | asset_url | stylesheet_tag }}
+
+<div class="about-hero-wrapper">
+  <h1>About AMJ Creations</h1>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.about-hero.name",
+  "tag": "section",
+  "class": "spaced-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "About Hero",
+      "label": "Heading"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.about-hero.presets.name"
+    }
+  ],
+  "templates": ["page"]
+}
+{% endschema %}
