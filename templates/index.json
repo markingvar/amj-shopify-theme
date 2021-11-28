@@ -1,7 +1,20 @@
 {
   "sections": {
     "hero": {
-      "type": "homepage-hero"
+      "type": "homepage-hero",
+      "blocks": {
+        "270a6bd0-3eb2-41fc-83b9-a7571433f6d4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/quilt.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "270a6bd0-3eb2-41fc-83b9-a7571433f6d4"
+      ],
+      "settings": {
+      }
     },
     "rich_text": {
       "type": "rich-text",

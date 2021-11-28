@@ -1,29 +1,45 @@
 {{ 'section-homepage-hero.css' | asset_url | stylesheet_tag }}
 
+{% javascript %}
+  console.log("lolz")
+{% endjavascript %}
+
 <div class="homepage-hero-wrapper">
+  <div class="homepage-hero-striped-background"></div>
   <div class="homepage-hero-image-wrapper">
-    <div class="hh-logo-wrapper">logo-wrapper</div>
-    <div class="hh-image">
-      {%- if section.blocks.settings.image != blank -%}
-        <img
-          srcset="{%- if block.settings.image.width >= 375 -%}{{ section.settings.image | img_url: '375x' }} 375w,{%- endif -%}
-          {%- if block.settings.image.width >= 750 -%}{{ block.settings.image | img_url: '750x' }} 750w,{%- endif -%}
-          {%- if block.settings.image.width >= 1100 -%}{{ block.settings.image | img_url: '1100x' }} 1100w,{%- endif -%}
-          {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
-          {%- if block.settings.image.width >= 1780 -%}{{ block.settings.image | img_url: '1780x' }} 1780w,{%- endif -%}
-          {%- if block.settings.image.width >= 2000 -%}{{ block.settings.image | img_url: '2000x' }} 2000w,{%- endif -%}
-          {%- if block.settings.image.width >= 3000 -%}{{ block.settings.image | img_url: '3000x' }} 3000w,{%- endif -%}
-          {%- if block.settings.image.width >= 3840 -%}{{ block.settings.image | img_url: '3840x' }} 3840w,{%- endif -%}
-          {{ block.settings.image | img_url: 'master' }} {{ block.settings.image.width }}w"
-          sizes="100vw"
-          src="{{ block.settings.image | img_url: '400x' }}"
-          alt="{{ block.settings.image.alt | escape }}"
-          loading="lazy"
-          width="{{ block.settings.image.width }}"
-          height="{{ block.settings.image.height }}"
-          style="max-width: min(100%, {{ block.settings.image_width }}px);"
-        >
-      {% endif %}
+    <div class="hh-logo-wrapper">
+      {%- liquid render 'icon-amj-creations-long' -%}
+    </div>
+    <div class="hh-image-wrapper">
+      {% for block in section.blocks %}
+        
+        {% if block.settings.image != blank %}
+          <div class="image-wrapper">
+          <img
+            class="image"
+            srcset="{%- if block.settings.image.width >= 375 -%}{{ block.settings.image | img_url: '375x' }} 375w,{%- endif -%}
+            {%- if block.settings.image.width >= 750 -%}{{ block.settings.image | img_url: '750x' }} 750w,{%- endif -%}
+            {%- if block.settings.image.width >= 1100 -%}{{ block.settings.image | img_url: '1100x' }} 1100w,{%- endif -%}
+            {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
+            {%- if block.settings.image.width >= 1780 -%}{{ block.settings.image | img_url: '1780x' }} 1780w,{%- endif -%}
+            {%- if block.settings.image.width >= 2000 -%}{{ block.settings.image | img_url: '2000x' }} 2000w,{%- endif -%}
+            {%- if block.settings.image.width >= 2800 -%}{{ block.settings.image | img_url: '2800x' }} 2800w,{%- endif -%}
+            {{ block.settings.image | img_url: 'master' }} {{ block.settings.image.width }}w"
+            sizes="100vw"
+            src="{{ block.settings.image | img_url: '400x' }}"
+            alt="{{ block.settings.image.alt | escape }}"
+            loading="lazy"
+            width="{{ block.settings.image.width }}"
+            height="{{ block.settings.image.height }}"
+            style="max-width: min(100%, {{ block.settings.image_width }}px);"
+          >
+          </div>
+          {% endif %}
+    {% endfor %}
+    </div>
+    <div class="hh-hero-text">
+      <div class="hero-text-one">I am hero text one</div>
+      <div class="hero-text-two">I am hero text two</div>
     </div>
   </div>
 </div>
@@ -40,6 +56,16 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "hero-text-one",
+          "label": "Hero Text One"
+        },
+        {
+          "type": "text",
+          "id": "hero-text-two",
+          "label": "Hero Text Two"
         }
       ]
     }
