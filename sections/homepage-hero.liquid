@@ -13,25 +13,25 @@
     </div>
     <div class="hh-image-wrapper">
         
-        {% if block.settings.image != blank %}
+        {% if block.settings.hero-image-one != blank %}
           <div class="image-wrapper">
           <img
             class="image"
-            srcset="{%- if block.settings.image.width >= 375 -%}{{ block.settings.image | img_url: '375x' }} 375w,{%- endif -%}
-            {%- if block.settings.image.width >= 750 -%}{{ block.settings.image | img_url: '750x' }} 750w,{%- endif -%}
-            {%- if block.settings.image.width >= 1100 -%}{{ block.settings.image | img_url: '1100x' }} 1100w,{%- endif -%}
-            {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
-            {%- if block.settings.image.width >= 1780 -%}{{ block.settings.image | img_url: '1780x' }} 1780w,{%- endif -%}
-            {%- if block.settings.image.width >= 2000 -%}{{ block.settings.image | img_url: '2000x' }} 2000w,{%- endif -%}
-            {%- if block.settings.image.width >= 2800 -%}{{ block.settings.image | img_url: '2800x' }} 2800w,{%- endif -%}
-            {{ block.settings.image | img_url: 'master' }} {{ block.settings.image.width }}w"
+            srcset="{%- if block.settings.hero-image-one.width >= 375 -%}{{ block.settings.hero-image-one | img_url: '375x' }} 375w,{%- endif -%}
+            {%- if block.settings.hero-image-one.width >= 750 -%}{{ block.settings.hero-image-one | img_url: '750x' }} 750w,{%- endif -%}
+            {%- if block.settings.hero-image-one.width >= 1100 -%}{{ block.settings.hero-image-one | img_url: '1100x' }} 1100w,{%- endif -%}
+            {%- if block.settings.hero-image-one.width >= 1500 -%}{{ block.settings.hero-image-one | img_url: '1500x' }} 1500w,{%- endif -%}
+            {%- if block.settings.hero-image-one.width >= 1780 -%}{{ block.settings.hero-image-one | img_url: '1780x' }} 1780w,{%- endif -%}
+            {%- if block.settings.hero-image-one.width >= 2000 -%}{{ block.settings.hero-image-one | img_url: '2000x' }} 2000w,{%- endif -%}
+            {%- if block.settings.hero-image-one.width >= 2800 -%}{{ block.settings.hero-image-one | img_url: '2800x' }} 2800w,{%- endif -%}
+            {{ block.settings.hero-image-one | img_url: 'master' }} {{ block.settings.hero-image-one.width }}w"
             sizes="100vw"
-            src="{{ block.settings.image | img_url: '400x' }}"
-            alt="{{ block.settings.image.alt | escape }}"
+            src="{{ block.settings.hero-image-one | img_url: '400x' }}"
+            alt="{{ block.settings.hero-image-one.alt | escape }}"
             loading="lazy"
-            width="{{ block.settings.image.width }}"
-            height="{{ block.settings.image.height }}"
-            style="max-width: min(100%, {{ block.settings.image_width }}px);"
+            width="{{ block.settings.hero-image-one.width }}"
+            height="{{ block.settings.hero-image-one.height }}"
+            style="max-width: min(100%, {{ block.settings.hero-image-one.width }}px);"
           >
           </div>
           {% endif %}
@@ -54,7 +54,12 @@
       "settings": [
         {
           "type": "image_picker",
-          "id": "image",
+          "id": "hero-image-one",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "hero-image-two",
           "label": "Image"
         },
         {
