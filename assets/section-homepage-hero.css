@@ -10,6 +10,18 @@
   }
 }
 
+@media (min-width: 990px) {
+  .homepage-hero-wrapper {
+    height: 590px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .homepage-hero-wrapper {
+    height: 620px;
+  }
+}
+
 .homepage-hero-striped-background {
   position: absolute;
   display: block !important;
@@ -66,6 +78,28 @@
   }
 }
 
+@media (min-width: 990px) {
+  .hh-logo-wrapper {
+    transform: rotate(0deg);
+    width: 290px;
+    margin-left: -520px;
+    margin-bottom: 6px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .hh-logo-wrapper {
+    margin-left: -740px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .hh-logo-wrapper {
+    margin-left: -780px;
+  }
+}
+
 .hh-image-wrapper {
   position: relative;
   width: 240px;
@@ -90,7 +124,26 @@
   }
 }
 
-.image-wrapper {
+@media (min-width: 990px) {
+  .hh-image-wrapper {
+    width: 820px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .hh-image-wrapper {
+    width: 1040px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .hh-image-wrapper {
+    width: 1120px;
+  }
+}
+
+.image-wrapper,
+.image-wrapper-two {
   position: absolute;
   top: 0;
   left: 0;
@@ -105,6 +158,33 @@
   height: inherit;
   min-height: inherit;
   object-fit: cover;
+}
+
+@media (min-width: 990px) {
+  .hh-image-wrapper {
+    box-shadow: unset;
+    overflow: unset;
+  }
+
+  .hh-image-one {
+    width: 66%;
+    border-radius: inherit;
+  }
+
+  .image-wrapper {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .image-wrapper-two {
+    width: 30%;
+    height: 164%;
+    right: 0;
+    top: -22%;
+    left: unset;
+    border-radius: 10px;
+    overflow: hidden;
+  }
 }
 
 .hh-hero-text {
@@ -141,4 +221,29 @@
 .hero-text-two {
   text-align: end;
   color: var(--color-brand-primary);
+}
+
+@media (min-width: 990px) {
+  .hh-hero-text {
+    margin: 28px auto;
+    margin-bottom: 0;
+    max-width: 320px;
+  }
+
+  .hero-text-one,
+  .hero-text-two {
+    margin-right: 28px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .hh-hero-text {
+    margin: 32px auto;
+    margin-bottom: 0;
+  }
+
+  .hero-text-one,
+  .hero-text-two {
+    margin-right: 0px;
+  }
 }

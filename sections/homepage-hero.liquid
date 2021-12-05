@@ -16,7 +16,7 @@
         {% if block.settings.hero_image_one != blank %}
           <div class="image-wrapper">
           <img
-            class="image"
+            class="image hh-image-one"
             srcset="{%- if block.settings.hero_image_one.width >= 375 -%}{{ block.settings.hero_image_one | img_url: '375x' }} 375w,{%- endif -%}
             {%- if block.settings.hero_image_one.width >= 750 -%}{{ block.settings.hero_image_one | img_url: '750x' }} 750w,{%- endif -%}
             {%- if block.settings.hero_image_one.width >= 1100 -%}{{ block.settings.hero_image_one | img_url: '1100x' }} 1100w,{%- endif -%}
@@ -38,7 +38,7 @@
         {% if block.settings.hero_image_two != blank %}
           <div class="image-wrapper-two">
           <img
-            class="image"
+            class="image hh-image-two"
             srcset="{%- if block.settings.hero_image_two.width >= 375 -%}{{ block.settings.hero_image_two | img_url: '375x' }} 375w,{%- endif -%}
             {%- if block.settings.hero_image_two.width >= 750 -%}{{ block.settings.hero_image_two | img_url: '750x' }} 750w,{%- endif -%}
             {%- if block.settings.hero_image_two.width >= 1100 -%}{{ block.settings.hero_image_two | img_url: '1100x' }} 1100w,{%- endif -%}
