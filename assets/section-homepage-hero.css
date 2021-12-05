@@ -151,6 +151,10 @@
   height: 100%;
 }
 
+.image-wrapper-two {
+  display: none;
+}
+
 .image {
   width: 100%;
   max-width: 100%;
@@ -177,6 +181,7 @@
   }
 
   .image-wrapper-two {
+    display: block;
     width: 30%;
     height: 164%;
     right: 0;
