@@ -57,6 +57,15 @@
   }
 }
 
+@media (min-width: 750px) {
+  .hh-logo-wrapper {
+    transform: rotate(-4deg);
+    width: 260px;
+    margin-left: -300px;
+    margin-bottom: 0px;
+  }
+}
+
 .hh-image-wrapper {
   position: relative;
   width: 240px;
@@ -71,6 +80,13 @@
   .hh-image-wrapper {
     height: 300px;
     width: 280px;
+  }
+}
+
+@media (min-width: 750px) {
+  .hh-image-wrapper {
+    transform: rotate(-4deg);
+    width: 580px;
   }
 }
 
@@ -105,6 +121,14 @@
     margin-bottom: 0;
     font-size: var(--font-lg);
     max-width: 300px;
+  }
+}
+
+@media (min-width: 750px) {
+  .hh-hero-text {
+    margin: 18px auto;
+    margin-bottom: 0;
+    max-width: 580px;
   }
 }
 

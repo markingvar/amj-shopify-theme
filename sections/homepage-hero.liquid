@@ -35,6 +35,28 @@
           >
           </div>
           {% endif %}
+        {% if block.settings.hero_image_two != blank %}
+          <div class="image-wrapper-two">
+          <img
+            class="image"
+            srcset="{%- if block.settings.hero_image_two.width >= 375 -%}{{ block.settings.hero_image_two | img_url: '375x' }} 375w,{%- endif -%}
+            {%- if block.settings.hero_image_two.width >= 750 -%}{{ block.settings.hero_image_two | img_url: '750x' }} 750w,{%- endif -%}
+            {%- if block.settings.hero_image_two.width >= 1100 -%}{{ block.settings.hero_image_two | img_url: '1100x' }} 1100w,{%- endif -%}
+            {%- if block.settings.hero_image_two.width >= 1500 -%}{{ block.settings.hero_image_two | img_url: '1500x' }} 1500w,{%- endif -%}
+            {%- if block.settings.hero_image_two.width >= 1780 -%}{{ block.settings.hero_image_two | img_url: '1780x' }} 1780w,{%- endif -%}
+            {%- if block.settings.hero_image_two.width >= 2000 -%}{{ block.settings.hero_image_two | img_url: '2000x' }} 2000w,{%- endif -%}
+            {%- if block.settings.hero_image_two.width >= 2800 -%}{{ block.settings.hero_image_two | img_url: '2800x' }} 2800w,{%- endif -%}
+            {{ block.settings.hero_image_two | img_url: 'master' }} {{ block.settings.hero_image_two.width }}w"
+            sizes="100vw"
+            src="{{ block.settings.hero_image_two | img_url: '400x' }}"
+            alt="{{ block.settings.hero_image_two.alt | escape }}"
+            loading="lazy"
+            width="{{ block.settings.hero_image_two.width }}"
+            height="{{ block.settings.hero_image_two.height }}"
+            style="max-width: min(100%, {{ block.settings.hero_image_two.width }}px);"
+          >
+          </div>
+          {% endif %}
         </div>
         <div class="hh-hero-text">
           <div class="hero-text-one">{{ block.settings.hero-text-one }}</div>
