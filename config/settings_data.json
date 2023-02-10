@@ -34,6 +34,9 @@
       },
       "footer": {
         "type": "footer",
+        "custom_css": [
+          "footer {display:none;}"
+        ],
         "settings": {
           "color_scheme": "background-1",
           "newsletter_enable": true,
