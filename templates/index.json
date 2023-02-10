@@ -41,6 +41,9 @@
         "template--15406233485549__78e80970-70c7-42f3-a87b-58275250b52c-1676003104031a6e13-1",
         "template--15406233485549__78e80970-70c7-42f3-a87b-58275250b52c-1676003104031a6e13-2"
       ],
+      "custom_css": [
+        ".button--primary {background: teal; border: none; outline: none;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/quilt.jpg",
         "image_height": "large",
