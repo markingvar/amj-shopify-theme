@@ -14,24 +14,24 @@
         "template--15406233485549__78e80970-70c7-42f3-a87b-58275250b52c-1676003104031a6e13-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "large"
+            "heading": "Leave Cart?",
+            "heading_size": "medium"
           }
         },
         "template--15406233485549__78e80970-70c7-42f3-a87b-58275250b52c-1676003104031a6e13-1": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
+            "text": "To get back to our site, click the back to website button below."
           }
         },
         "template--15406233485549__78e80970-70c7-42f3-a87b-58275250b52c-1676003104031a6e13-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
+            "button_label_1": "Back to homepage",
+            "button_link_1": "https:\/\/538e-2001-569-fcb6-a00-2db5-565-30c8-c722.ngrok.io",
             "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
+            "button_label_2": "",
+            "button_link_2": "https:\/\/538e-2001-569-fcb6-a00-2db5-565-30c8-c722.ngrok.io\/cart",
             "button_style_secondary_2": false
           }
         }
