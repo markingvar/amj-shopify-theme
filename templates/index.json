@@ -47,7 +47,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/quilt.jpg",
-        "image_height": "large",
+        "image_height": "medium",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
         "show_text_box": true,
