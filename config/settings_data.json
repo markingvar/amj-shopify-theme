@@ -120,5 +120,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "section {margin: 0 !important;}"
+    ]
   }
 }
