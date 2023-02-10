@@ -2,6 +2,9 @@
   "sections": {
     "hero": {
       "type": "homepage-hero",
+      "custom_css": [
+        ".homepage-hero-wrapper {display: none;}"
+      ],
       "settings": {
       }
     },
