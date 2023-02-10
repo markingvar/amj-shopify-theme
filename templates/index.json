@@ -15,7 +15,7 @@
           "type": "heading",
           "settings": {
             "heading": "Image banner",
-            "heading_size": "medium"
+            "heading_size": "large"
           }
         },
         "template--15406233485549__78e80970-70c7-42f3-a87b-58275250b52c-1676003104031a6e13-1": {
@@ -42,7 +42,8 @@
         "template--15406233485549__78e80970-70c7-42f3-a87b-58275250b52c-1676003104031a6e13-2"
       ],
       "settings": {
-        "image_height": "medium",
+        "image": "shopify:\/\/shop_images\/quilt.jpg",
+        "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
         "show_text_box": true,
